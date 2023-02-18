@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="index.js" type="text/javascript"></script>
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form id="form" action="/" onsubmit="return ValidateInputs()">
+
+            <h1>Create Account</h1>
+
+            <div class=" input-control">
+                <label for="username">Nombre</label>
+                <input name="username" type="text" id="username">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input name="email" type="email" id="email">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="password">Clave</label>
+                <input name="password" type="password" id="password">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="password">Confirme su clave</label>
+                <input name="password2" type="password" id="password2">
+                <div class="error"></div>
+            </div>
+
+            <button type="submit">ENVIAR</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
